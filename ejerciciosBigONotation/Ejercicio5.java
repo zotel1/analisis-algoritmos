@@ -1,5 +1,7 @@
 package ejerciciosBigONotation;
 
+/*Analiza la complejidad de esta función recursiva que calcula el número de Fibonacci */
+
 public class Ejercicio5 {
     public int fibonacci(int n){
         if (n <= 1){
