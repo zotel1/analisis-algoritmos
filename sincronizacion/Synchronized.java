@@ -18,7 +18,9 @@ public class Synchronized {
 
         hilo1.start();
         System.out.println("Estado del hilo1 después de start(): " + hilo1.getState());
+        System.out.println(hilo1);
         hilo2.start();
+        System.out.println(hilo2);
         System.out.println("Estado del hilo2 después de start(): " + hilo2.getState());
 
         try {
