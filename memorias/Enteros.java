@@ -1,6 +1,6 @@
 package memorias;
 
-public class HeapStack {
+public class Enteros {
     
     public static void main(String[] args) {
         int a = 500;
