@@ -1,13 +1,13 @@
  package hilos.todoCode;
 
-public class Hilo extends Thread {
+public class HiloTodoCode extends Thread {
     public void run() {
         System.out.println("Hilo ejecutandose con Threds");
     }
 
      public static void main(String[] args) {
-        Hilo hilo1 = new Hilo();
-        hilo1.start();
+        HiloTodoCode hiloTodoCode = new HiloTodoCode();
+        hiloTodoCode.start();
 
         // Medir memoria desde el main
         mostrarMemoria("Desde main");
