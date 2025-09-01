@@ -5,17 +5,17 @@ public class HiloTodoCode extends Thread {
         System.out.println("Hilo ejecutandose con Threds");
     }
 
-     public static void main(String[] args) {
+    public static void main(String[] args) {
         HiloTodoCode hiloTodoCode = new HiloTodoCode();
         hiloTodoCode.start();
 
         // Medir memoria desde el main
-        mostrarMemoria("Desde main");
+        hiloTodoCode.mostrarMemoria("Desde main");
 
         System.out.println("Hilo principal terminando.");
     }
 
-    private static void mostrarMemoria(String contexto) {
+    public void mostrarMemoria(String contexto) {
         Runtime runtime = Runtime.getRuntime();
         long total = runtime.totalMemory();
         long free = runtime.freeMemory();
