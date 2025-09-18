@@ -19,7 +19,8 @@ public class OutofMemoryExercise {
         try {
             while (true) {
                 // Todo: Descomenta la siguiente linea para provocar el error.
-                list.add(new LargeObject());
+                
+                //list.add(new LargeObject());
                 // Si la ejecutas, el ]GC no podra liberar memoria a tiempo
             }
         } catch(OutOfMemoryError e){
